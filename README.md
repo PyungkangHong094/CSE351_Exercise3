@@ -66,7 +66,7 @@ Use conditions to update specific attributes in a row. If any missing value is f
 
 ## Regression Models
 
-![Regression Models](/assets/Rule_engine.png)
+![Regression Models](/assets/Regression_models.png)
 
 1) Polynomial Regression Learner (max degree of 3)
 
