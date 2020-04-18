@@ -55,15 +55,25 @@ To remove missing values in "Stay_In_Current_City_Years" column
 Removes selected columns, such as Product_Category_ 2 and 3, in the table.
 
 ### Missing Value
-![Column Filter](/assets/Missing_value.png)
+![Missing Value](/assets/Missing_value.png)
 
 Using regular expressions or conditions, replace missing values with specific values. It is used to replace missing values with zeros in "Stay_In_Current_City_Years" column
 
 ### Rule Engine
-![Column Filter](/assets/Rule_engine.png)
+![Rule Engine](/assets/Rule_engine.png)
 
 Use conditions to update specific attributes in a row. If any missing value is found in category columns, replace it with the upper category. (For example, if Product_Category_2 has no value, replace it with the value of Product_Category_1)
 
-### Links
+## Regression Models
+
+![Regression Models](/assets/Rule_engine.png)
+
+1) Polynomial Regression Learner (max degree of 3)
+
+2) Linear Regression Learner
+
+3) Simple Regression Learner
+
+## Links
 `<URL>` : <https://datahack.analyticsvidhya.com/contest/black-friday/#ProblemStatement><br/>
 `<Course URL>` : <https://ppawar.github.io/Spring2020/CSE351-S20/Exercises/Exercise%203.pdf>
