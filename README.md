@@ -72,7 +72,7 @@ Use conditions to update specific attributes in a row. If any missing value is f
 
 2) Linear Regression Learner
 
-3) Simple Regression Learner
+3) Simple Regression Tree Learner
 
 ## Links
 `<URL>` : <https://datahack.analyticsvidhya.com/contest/black-friday/#ProblemStatement><br/>
