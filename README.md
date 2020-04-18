@@ -1,66 +1,75 @@
-### Predict Black Friday Sales
-#### CSE 351 - Exercise 3 
-
--------------
-
-### Contributor
+# Predict Black Friday Sales
+In this exercise, you will solve a data challenge as a group project using the following approach: 	
+1) Visit the data challenge page. 
+2) Read carefully the problem to be solved. 
+3) Download dataset. 
+4) Figure out suitable approaches for solving the problem. 
+5) Preprocess data for creating a dataset suitable for experimentation. 
+6) Use your favorite data analysis tool to solve the problem. 
+7) Report the approach taken, steps for using your favorite data analysis tool and your results in a PPT format and submit on Blackboard. 
+8) Create a Github repository, upload your preprocessed data, steps for using your favorite data analysis tool and your results. Submit the Github link on blackboard.
+## Contributor
 - Wha Suk Lee
 - Haein Park
 - P.K.
-
--------------
-### Tools
+## Tools
 - KNIME 4.1.0
+## Data
+| Variable | Definition |
+|--|--|
+|User_ID |User ID|
+|Product_ID|Product ID|
+|Gender|Sex of User|
+|Age|Age in bins|
+|Occupation|Occupation (Masked)|
+|City_Category|Category of the City (A,B,C)
+|Stay_In_Current_City_Years|Number of years stay in current city
+|Marital_Status|Marital Status
+|Product_Category_1|Product Category (Masked)
+|Product_Category_2|Product may belongs to other category also (Masked)
+|Product_Category_3|Product may belongs to other category also (Masked)
+|Purchase|Purchase Amount (Target Variable)
+-------------
+
+## Preprocessing
+There are some missing values found in columns,
+- Stay_In_Current_City_Years
+- Product_Category_2
+- Product_Category_3
+
+Two naive approaches are suggested to remove missing values in category columns
+1) Why not remove unnecessary categories?
+
+2) If any missing value is found, replace it with the upper category.
+
+To remove missing values in "Stay_In_Current_City_Years" column
+	
+1) Replace missing values with zeros
+
+  
+## Nodes
+
+### Column Filter
+<a  href="https://drive.google.com/uc?export=view&id=1WzVVI-C9aZpH5mvfMiJU1sBKs7Imsodo"><img  src="https://drive.google.com/uc?export=view&id=1WzVVI-C9aZpH5mvfMiJU1sBKs7Imsodo" style="width: 100px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+
+Removes selected columns, such as Product_Category_ 2 and 3, in the table.
+
+### Missing Value
+
+<a  href="https://drive.google.com/uc?export=view&id=1Zq9rl4S6CBNLPHt5K9DNA-KO29r5w-P9"><img  src="https://drive.google.com/uc?export=view&id=1Zq9rl4S6CBNLPHt5K9DNA-KO29r5w-P9" style="width: 100px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+
+Using regular expressions or conditions, replace missing values with specific values. It is used to replace missing values with zeros in "Stay_In_Current_City_Years" column
+
+  
+
+### Rule Engine
+
+<a  href="https://drive.google.com/uc?export=view&id=1Be01hUlDgRfpdziBiWxIbTWeN1hvt-Kv"><img  src="https://drive.google.com/uc?export=view&id=1Be01hUlDgRfpdziBiWxIbTWeN1hvt-Kv" style="width: 100px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+
+Use conditions to update specific attributes in a row. If any missing value is found in category columns, replace it with the upper category. (For example, if Product_Category_2 has no value, replace it with the value of Product_Category_1)
 
 -------------
-### Data
-Variable  | Definition
-------------- | -------------
-User_ID | User ID
-Product_ID|Product ID
-Gender|Sex of User
-Age|Age in bins
-Occupation|Occupation (Masked)
-City_Category|Category of the City (A,B,C)
-Stay_In_Current_City_Years|Number of years stay in current city
-Marital_Status|Marital Status
-Product_Category_1|Product Category (Masked)
-Product_Category_2|Product may belongs to other category also (Masked)
-Product_Category_3|Product may belongs to other category also (Masked)
-Purchase|Purchase Amount (Target Variable)
--------------
-### Description
 
-- ####Preprocessing
-	- There are some missing values found in columns,
-		- Stay_In_Current_City_Years
-		- Product_Category_2
-		- Product_Category_3
-
-	- Two naive approaches are suggested to remove missing values in category columns
-		1) Why not remove unnecesary categories?
-		2) If any missing value is found, replace it with the uppercategory.
-
-	- To remove missing values in "Stay_In_Current_City_Years" column
-		- Replace missing values with zeros
-
-- ####Node
-	-	Column Filter
-![](https://doc-0o-34-docs.googleusercontent.com/docs/securesc/3hbt226i21h0438kcut1eog5i4rv6ier/gcn980h222jeq1u1gdq54t535kvmv5pe/1587197850000/17647385581214940908/17647385581214940908/1WzVVI-C9aZpH5mvfMiJU1sBKs7Imsodo?authuser=0&nonce=622gbpung8k2u&user=17647385581214940908&hash=sd2edbtqi211rcflali1coadamd9se8u =50)
-		Removes selected columns in the table.
-		It is used to remove unnecesary category columns.
-
-	-	Missing Value
-![](https://doc-0o-34-docs.googleusercontent.com/docs/securesc/3hbt226i21h0438kcut1eog5i4rv6ier/i9v2co2e4s3sjukds63qc2dicuf2bpo6/1587198000000/17647385581214940908/17647385581214940908/1Zq9rl4S6CBNLPHt5K9DNA-KO29r5w-P9?authuser=0 =50)
-		Using regular expressions or conditions, replace missing values with
-		specific values.
-		It is used to replace missing values with zeros in "Stay_In_Current_City_Years" column
-
-	-	Rule Engine
-![](https://doc-0k-34-docs.googleusercontent.com/docs/securesc/3hbt226i21h0438kcut1eog5i4rv6ier/2dskf4jrggue83qvk129bjrd3c7ci0r5/1587198000000/17647385581214940908/17647385581214940908/1Be01hUlDgRfpdziBiWxIbTWeN1hvt-Kv?authuser=0 =50)
-		Use conditions to update specific attributes in a row.
-		If any missing value is found in category columns, replace it with the upper category.
--------------
 ### Links
-`<link>` : <https://datahack.analyticsvidhya.com/contest/black-friday/#ProblemStatement>
-
+`<URL>` : <https://datahack.analyticsvidhya.com/contest/black-friday/#ProblemStatement>
+`<Course URL>` : <https://ppawar.github.io/Spring2020/CSE351-S20/Exercises/Exercise%203.pdf>
