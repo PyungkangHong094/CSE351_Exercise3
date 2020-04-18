@@ -1,8 +1,8 @@
 ## Result
-PR: Polynomial Regression
-LR: Linear Regression
+PR: Polynomial Regression<br/>
+LR: Linear Regression<br/>
 RT: Regression Tree
 
 ## Preprocessed data
-CE: Column Exclusion
+CE: Column Exclusion<br/>
 MV: Missing Value Replacement
