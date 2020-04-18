@@ -65,5 +65,5 @@ Using regular expressions or conditions, replace missing values with specific va
 Use conditions to update specific attributes in a row. If any missing value is found in category columns, replace it with the upper category. (For example, if Product_Category_2 has no value, replace it with the value of Product_Category_1)
 
 ### Links
-`<URL>` : <https://datahack.analyticsvidhya.com/contest/black-friday/#ProblemStatement>
+`<URL>` : <https://datahack.analyticsvidhya.com/contest/black-friday/#ProblemStatement><br/>
 `<Course URL>` : <https://ppawar.github.io/Spring2020/CSE351-S20/Exercises/Exercise%203.pdf>
