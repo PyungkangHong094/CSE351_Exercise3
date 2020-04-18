@@ -50,25 +50,19 @@ To remove missing values in "Stay_In_Current_City_Years" column
 ## Nodes
 
 ### Column Filter
-<a  href="https://drive.google.com/uc?export=view&id=1WzVVI-C9aZpH5mvfMiJU1sBKs7Imsodo"><img  src="https://drive.google.com/uc?export=view&id=1WzVVI-C9aZpH5mvfMiJU1sBKs7Imsodo" style="width: 100px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+![Column Filter](/assets/Column_filter.png)
 
 Removes selected columns, such as Product_Category_ 2 and 3, in the table.
 
 ### Missing Value
-
-<a  href="https://drive.google.com/uc?export=view&id=1Zq9rl4S6CBNLPHt5K9DNA-KO29r5w-P9"><img  src="https://drive.google.com/uc?export=view&id=1Zq9rl4S6CBNLPHt5K9DNA-KO29r5w-P9" style="width: 100px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+![Column Filter](/assets/Missing_value.png)
 
 Using regular expressions or conditions, replace missing values with specific values. It is used to replace missing values with zeros in "Stay_In_Current_City_Years" column
 
-  
-
 ### Rule Engine
-
-<a  href="https://drive.google.com/uc?export=view&id=1Be01hUlDgRfpdziBiWxIbTWeN1hvt-Kv"><img  src="https://drive.google.com/uc?export=view&id=1Be01hUlDgRfpdziBiWxIbTWeN1hvt-Kv" style="width: 100px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+![Column Filter](/assets/Rule_engine.png)
 
 Use conditions to update specific attributes in a row. If any missing value is found in category columns, replace it with the upper category. (For example, if Product_Category_2 has no value, replace it with the value of Product_Category_1)
-
--------------
 
 ### Links
 `<URL>` : <https://datahack.analyticsvidhya.com/contest/black-friday/#ProblemStatement>
